@@ -10,14 +10,14 @@ const useInputValidationViewModel = ({
   type,
   required,
 }: Props) => {
-  console.log({
-    value,
-    name,
-    label,
-    onValueChange,
-    type,
-    required,
-  });
+  // console.log({
+  //   value,
+  //   name,
+  //   label,
+  //   onValueChange,
+  //   type,
+  //   required,
+  // });
 
   const [error, setError] = useState("");
   const [focused, setFocused] = useState(false);
@@ -45,6 +45,7 @@ const useInputValidationViewModel = ({
       !/^((\+91?)|\+)?[7-9][0-9]{9}$/.test(text as string)
     ) {
       setError("Please enter a valid Mobile Number.");
+      isValid = false;
     } else {
       setError("");
       setFocused(true);

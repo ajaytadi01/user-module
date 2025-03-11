@@ -482,7 +482,7 @@ describe("USER MODULE VALIDATION", () => {
       fireEvent(firstNameInstance, "blur");
       fireEvent.changeText(lastNameInstance, "asdfgh");
       fireEvent(lastNameInstance, "blur");
-      fireEvent.changeText(emailInstance, "asdf@asd");
+      fireEvent.changeText(emailInstance, "asdf");
       fireEvent(emailInstance, "blur");
       fireEvent.changeText(mobileInstance, 9123456789);
       fireEvent(mobileInstance, "blur");
